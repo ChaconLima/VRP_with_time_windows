@@ -1,4 +1,5 @@
 from haversine import haversine
+from const import AVERAGE_SPEED
 
 LAT = 0
 LONG = 1 
@@ -8,7 +9,7 @@ def calculation( latInit, longInit, latFin, longFin):
     fim = (latFin, longFin)
 
     distance = haversine(init, fim)
-    duration = distance/60
+    duration = distance/AVERAGE_SPEED
 
     return {
         'distance': distance,
