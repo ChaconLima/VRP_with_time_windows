@@ -6,3 +6,11 @@
 ## No Unix ou no MacOS, executa:
 
     source demo-env/bin/activate
+
+## Install
+
+    pip install -r requirements.txt
+    
+## Repo
+
+    pip freeze > requirements.txt
